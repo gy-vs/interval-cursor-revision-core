@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{IntervalIndex}from'../src/index.js';it('queries',()=>expect(new IntervalIndex<number>().add({id:'a',start:1,end:3,value:1}).overlap(2,4)).toHaveLength(1));
